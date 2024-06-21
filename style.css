@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+}
+
+.font-laila {
+  font-family: "Laila", serif;
+}
+
+.transition-width {
+  transition: width 0.3s ease-in-out;
+}
+

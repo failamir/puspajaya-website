@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puspajaya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        h1 {
+            color: black;
+        }
+    </style>
+    <script>
+        module.exports = {
+            //...
+            daisyui: {
+                themes: false,
+            },
+        }
+    </script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="text-white sticky top-0 z-50 bg-gray-700 backdrop-blur-sm  bg-opacity-30">
+        <div class="container mx-auto px-24 py-4 flex justify-between items-center ">
+            <a href="/">
+                <img src="./assets/logo.png" class="w-32 text-2xl font-bold" />
+            </a>
+            <nav class="gap-4 flex items-center">
+                <a href="/" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">Tentang Kami</a>
+                <a href="#" class="hover:text-gray-200">Layanan</a>
+                <a href="#" class="hover:text-gray-200">Info</a>
+                <div class="">
+                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                        class="hover:text-gray-200">Kontak</button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="hover:text-gray-200">Booking</a>
+                <!-- Search Bar -->
+                <div class="relative w-12 overflow-hidden transition-width" id="search">
+                    <input type="text" id="search-input"
+                        class="bg-opacity-10 bg-white  border-none rounded-lg px-4 py-2 w-full" placeholder="Search...">
+                    <button class="absolute right-2 top-2">
+                        <svg class="h-5 w-5 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35m1.45-5.65a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- sejarah puspajaya -->
+
+    <div class="container mx-auto px-24 py-16">
+        <h1 class="text-3xl font-bold mb-8 ">SEJARAH PUSPA JAYA</h1>
+        <div class="grid grid-cols-12 ">
+            <div class="mb-4 col-span-2">
+                <img src="./assets/bapak-220x300.jpg" alt="Bapak Ketut Narya" class="rounded-lg shadow-lg">
+            </div>
+            <p class="mb-4 ml-6 col-span-10 text-lg leading-relaxed text-gray-700 text-justify">
+                Puspa Jaya merupakan perusahaan keluarga yang bergerak di bidang Jasa Transportasi Darat Bus asal
+                Lampung.
+                Pendiri Puspa Jaya adalah Bapak Ketut Narya yang merupakan seorang transmigran asal Pulau Bali yang
+                bekerja
+                sebagai pegawai negeri saat itu (Guru Sekolah Rakyat). Bp Ketut Narya mengikuti program transmigrasi
+                pada
+                tahun 1963 dikarenakan terjadi peristiwa erupsi Gunung Agung di wilayah kampung halamannya di
+                Karangasem,
+                Bali dengan tujuan Provinsi Lampung. Setibanya di Lampung, Bapak Ketut Narya beserta rombongan menuju
+                daerah
+                Way Kanan, membuka lahan dan mendirikan perkampungan.
+
+                Pada tanggal 31 Oktober 1978, Bapak Ketut Narya memulai usaha Angkutan Bus yang bernama Puspa Sari
+                (dengan
+                persetujuan PT. Puspa Sari di Bali) bertempat di Kabupaten Way Kanan, Provinsi Lampung. Usaha diawali
+                dengan
+                satu armada bus dengan trayek Banjit, Way Kanan ke Rajabasa, Bandar Lampung. Seiring meningkatnya
+                kebutuhan
+                perjalanan masyarakat Lampung, Pada Tahun 1989 menjadi tonggak rintisan untuk rute lintas Lampung – Jawa
+                yaitu
+                antara lain Yogyakarta dan Solo dengan layanan Bus kelas Ekonomi.
+            </p>
+        </div>
+        <div class="text-lg leading-relaxed text-gray-700">
+            <p class="mb-4 text-justify">
+                Pada tahun 1992 estafet kepemimpinan dilanjutkan oleh putra pertama bapak Ketut Narya yaitu Ketut Pasek.
+                Pada era
+                kepemimpinan Bapak Ketut Pasek, dimulai meritis usaha Angkutan Bus secara mandiri dan mendirikan
+                Perusahaan
+                Transportasi Bus dengan nama Puspa Jaya serta membuka pelayanan Bus Non Ekonomi (AC) dan mulai
+                mengembangkan
+                rute ke beberapa daerah di Lampung dan Jawa Timur. Pada tahun 2000an, Puspa Jaya mengembangkan sayap
+                usahanya di
+                bidang jasa pelayanan Bus Pariwisata. Sampai saat ini, Moda transportasi yang dilayani Puspa Jaya Group
+                adalah
+                Bus AKAP (Antar Kota Antar Provinsi) dan Bus Pariwisata.
+            </p>
+        </div>
+
+        <!-- visi misi -->
+        <div class="visi_misi">
+            <h1 class="text-lg font-bold mb-4 ">Visi :</h1>
+            <p class="mb-4 text-base leading-relaxed text-gray-700 text-justify">
+                MENJADI PERUSAHAAN TRANSPORTASI TERBAIK DENGAN ORIENTASI KESELAMATAN DAN KENYAMANAN.
+            </p>
+            <h1 class="text-base font-bold mb-4 ">Misi :</h1>
+            <div class="text-gray-700 text-lg">
+                <ol class="list-decimal list-inside">
+                    <li class="mb-4 leading-relaxed text-justify">MEMBANGUN LAYANAN TRANSPORTASI YANG MENGIKUTI
+                        PERKEMBANGAN JAMAN,</li>
+                    <li class="mb-4 leading-relaxed text-justify">MEMBERIKAN JASA TRANSPORTASI BUS DENGAN KUALITAS
+                        TERBAIK.</li>
+                    <li class="mb-4 leading-relaxed text-justify">MEMBANGUN SUMBER DAYA MANUSIA YANG PROFESIONAL DAN
+                        BERTANGGUNG JAWAB.</li>
+                </ol>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Penghargaan -->
+    <div class="container mx-auto px-24 pb-16">
+        <h1 class="text-3xl text-center font-bold mb-8">PENGHARGAAN</h1>
+        <h2 class="text-xl text-center my-2 mb-8 font-laila">Wujud Terima kasih Atas Kepercayaan, Dukungan dari Semua
+            Pihak, Pelanggan, Mitra Bisnis dan Manajemen. Puspa Jaya Transport akan terus berkomitmen terdepan dalam
+            memberikan pelayanan terbaik.</h2>
+        <div class="flex gap-6">
+            <div class="card w-96 bg-white-100 shadow-xl">
+                <figure><img src="https://puspajaya.co.id/wp-content/uploads/2022/06/IMG-0170-1024x1024.jpg"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        WAHANA ADHIGANA TERBAIK NASIONAL 2021
+                    </h2>
+                    <p>Penghargaan Wahana Adhigana Terbaik Nasional Oleh DITJENHUBDAT KEMENHUB RI Tahun 2021 Kategori
+                        AKAP Non Ekonomi – Perusahaan Sedang</p>
+                </div>
+            </div>
+            <div class="card w-96 bg-white-100 shadow-xl">
+                <figure><img src="https://puspajaya.co.id/wp-content/uploads/2020/07/Image00001-6-600x600.jpg"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        PENGUSAHA ANGKUTAN TERBAIK 2014 PROVINSI LAMPUNG
+                    </h2>
+                    <p>Penghargaan Oleh Pemerintah Provinsi Lampung sebagai Pengusaha Angkutan Umum Terbaik Tahun 2014
+                        di Provinsi Lampung</p>
+                </div>
+            </div>
+            <div class="card w-96 bg-white-100 shadow-xl">
+                <figure><img src="https://puspajaya.co.id/wp-content/uploads/2020/07/Image00002-5-600x600.jpg"
+                        alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        PERUSAHAAN BUS AKAP TERBAIK NASIONAL 2013
+                    </h2>
+                    <p>Penghargaan Menteri Perhubungan Republik Indonesia sebagai Perusahaan Angkutan Antar Kota Antar
+                        Propinsi (AKAP) Dengan Pelayanan Non Ekonomi terbaik tahun 2013</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- stict -->
+
+    <div class="container mx-auto px-6 py-16">
+        <div class="flex justify-between w-full">
+            <div class="border-r w-full text-center px-4">
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-house-user text-blue-500 mb-4 text-3xl"></i>
+                    <h2 class="text-base font-semibold">AGEN MENJANGKAU SETIAP WILAYAH</h2>
+                </div>
+            </div>
+            <div class="border-r w-full text-center px-4">
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-bus text-green-500 mb-4 text-3xl"></i>
+                    <h2 class="text-base font-semibold">ARMADA YANG NYAMAN</h2>
+                </div>
+            </div>
+            <div class="w-full text-center px-4">
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-ticket text-red-500 mb-4 text-3xl"></i>
+                    <h2 class="text-base font-semibold">PEMESANAN TIKET MUDAH</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimoni -->
+
+    <div class="container mx-auto px-6 py-16">
+        <section id="testimonials" aria-label="What our customers are saying" class="bg-slate-50 py-20 sm:py-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl md:text-center">
+                    <h2 class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">TESTIMONI</h2>
+                </div>
+                <ul role="list"
+                    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                            <li>
+                                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                        aria-hidden="true" width="105" height="78"
+                                        class="absolute left-6 top-6 fill-slate-100">
+                                        <path
+                                            d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                        </path>
+                                    </svg>
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">Sebenarnya mulai dari layanan
+                                            yang sangat baik, harga kompetitif, nyaman saat diperjalanan. Itu menjadi
+                                            acuan saya pilih bus puspa untuk perjalanan jauh, karena sering bolak balik
+                                            Lampung-Yogya jadi sebagi mahasiwa recomended banget pokoknya. </p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">Elvia Fajarwati</div>
+                                            <div class="font-display text-sm text-slate-900">Mahasiwa, Yogyakarta</div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/men/15.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                            <li>
+                                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                        aria-hidden="true" width="105" height="78"
+                                        class="absolute left-6 top-6 fill-slate-100">
+                                        <path
+                                            d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                        </path>
+                                    </svg>
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">Saya senang dengan layanan yang
+                                            disediakan oleh Puspa Jaya.Ketika berangkat ke denpasar bali saya gunakan
+                                            puspa jaya, harga tiket terjangkau, bus nya nyaman dan ontime. Pelayanan
+                                            Ramah,Selama ini belum pernah coba yang lain.. udah nyaman aja naik puspa.
+                                        </p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">ARIYADI</div>
+                                            <div class="font-display text-sm text-slate-900">Mahasiswa. Bandar Lampung
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/women/15.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                            <li>
+                                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg
+                                        aria-hidden="true" width="105" height="78"
+                                        class="absolute left-6 top-6 fill-slate-100">
+                                        <path
+                                            d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                                        </path>
+                                    </svg>
+                                    <blockquote class="relative">
+                                        <p class="text-lg tracking-tight text-slate-900">Saya sudah lama menggunakan
+                                            Puspa Jaya sebagai transportasi untuk ke bandar lampung, selain busnya
+                                            bersih, nyaman aja saat dijalan, beli tiketnya mudah tinggal datang ke pol
+                                            puspa aja, bisa pilih bangku. Lebih enak sih, Ya sampai hari ini kalau pergi
+                                            naik puspa.</p>
+                                    </blockquote>
+                                    <figcaption
+                                        class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                                        <div>
+                                            <div class="font-display text-base text-slate-900">Eko Yuliansyah</div>
+                                            <div class="font-display text-sm text-slate-900">Karyawan, Kotabumi
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden rounded-full bg-slate-50">
+                                            <img alt="" class="h-14 w-14 object-cover" style="color:transparent"
+                                                src="https://randomuser.me/api/portraits/men/10.jpg">
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+
+
+    <!-- Footer container -->
+    <footer class=" px-32 text-center bg-primary text-white/75 lg:text-left">
+        <div class="flex items-center justify-center border-b p-6 border-white/20 lg:justify-between">
+            <div class="me-12 hidden lg:block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Social network icons container -->
+            <div class="flex justify-center">
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                </a>
+
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+        <div class="mx-6 py-10 text-center md:text-left">
+            <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- TW Elements section -->
+                <div class="">
+                    <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                        <span class="me-3 [&>svg]:h-4 [&>svg]:w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                            </svg>
+                        </span>
+                        Puspa Jaya
+                    </h6>
+                    <p>
+                        Jl. Soekarno Hatta No. 3 Rajabasa – Bandar Lampung, Lampung, Indonesia, Telp 0721783111 /
+
+                    </p>
+                </div>
+                <!-- Products section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        Layanan
+                    </h6>
+                    <p class="mb-4">
+                        <a href="#!">BUS ANTAR KOTA ANTAR PROPINSI (AKAP)</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">PUSPA JAYA BUS PARIWISATA</a>
+                    </p>
+
+                </div>
+                <!-- Useful links section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        Profile
+                    </h6>
+                    <p class="mb-4">
+                        <a href="#!">Sejarah Puspa jaya</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">Visi Misi</a>
+                    </p>
+                    <p class="mb-4">
+                        <a href="#!">Penghargaan Puspa jaya</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+                <!-- Contact section -->
+                <div>
+                    <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                        Contact
+                    </h6>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                                <path
+                                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                            </svg>
+                        </span>
+                        https://puspajaya.co.id/
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </span>
+                        puspajaya.po@gmail.com
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        +6281297773111
+                    </p>
+                    <p class="mb-4 flex items-center justify-center md:justify-start">
+                        <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        +0721783111
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="border-t border-white/20 p-6 text-center">
+            <span>Copyright © 2024 PT. Puspa Jaya Transport. Developer by Lampung Web Indowebstore. All rights
+                reserved</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
