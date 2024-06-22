@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puspajaya | Layanan</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,6 +16,11 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
 
     <style>
         h1 {
@@ -46,7 +50,7 @@
                 <a href="/" class="hover:text-gray-200">Home</a>
                 <a href="about.html" class="hover:text-gray-200">Tentang Kami</a>
                 <a href="layanan.html" class="hover:text-gray-200">Layanan</a>
-                <a href="contact.html" class="hover:text-gray-200">Kontak</a> 
+                <a href="contact.html" class="hover:text-gray-200">Kontak</a>
                 <a href="booking.html" class="hover:text-gray-200">Booking</a>
                 <!-- Search Bar -->
                 <div class="relative w-12 overflow-hidden transition-width" id="search">
@@ -67,62 +71,879 @@
     <!-- Banner puspajaya -->
 
     <div class="relative w-full h-[200px] pt-8 -mt-[106px]">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjByzpwzE4Fayc9Mz1ORUiAj4bap2Tm1sISntZNgJa-nLQrBQ01ARWLs0-6Q3ivxE4nJfidBPTjQAwBLS1jnpkKBcVRq5CLFMwbn0xEyhHxC0J4l-yodC9CQ84UxD7yiBjnkr-HaqLCvC2y/s1600/PO+Puspa+Jaya_Scorpion+King-Jupiter+Li+by+Tentrem2.jpg"
-        class="absolute block w-full h-full object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        alt="">
+        <img src="https://pbs.twimg.com/media/D7Z9IR_UIAEY1Um.jpg"
+            class="absolute block w-full h-full object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            alt="">
     </div>
 
     <!-- kontak -->
-     
-    <section class="bg-gray-100 pb-12">
+
+    <section class="bg-gray-50 pb-12">
         <div class="container px-24 py-12 mx-auto">
             <div class="mb-8">
-                <h1 class="text-2xl font-semibold text-gray-800 md:text-3xl">KANTOR PERWAKILAN LAMPUNG</h1>
+                <h1 class="text-2xl font-semibold text-gray-800 md:text-3xl">FASILITAS BUS AKAP</h1>
             </div>
-            <div class="flex flex-wrap gap-4">
-                <div class="card w-[350px] bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="card-body">
-                      <h2 class="card-title">KANTOR PUSAT PUSPA JAYA</h2>
-                      <p>JL.SOEKARNO HATTA NO.3 RAJABASA BANDAR LAMPUNG
-                        <br>
-                        TELP : (0721) 783 111 / 0812 9777 3111</p>
-                    </div>
-                  </div>
-                <div class="card w-[350px] bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="card-body">
-                      <h2 class="card-title">KANTOR PERWAKILAN PRINGSEWU</h2>
-                      <p>TERMINAL PRINGSEWU
-                        JL. PEMUDA NO.53 PRINGSEWU, PROPINSI LAMPUNG
-                        <br>
-                        TELP : 0812 7269 358 (FAUZI)</p>
-                    </div>
-                  </div>
-                <div class="card w-[350px] bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="card-body">
-                      <h2 class="card-title">KANTOR PERWAKILAN BANDAR JAYA</h2>
-                      <p>JL.LINTAS SUMATERA NO.200 YUKUM JAYA, TERBANGGI BESAR, LAMPUNG TENGAH
-                        <br>
-                        TELP : (0725)25311 / 082375783955 / 081369514299</p>
-                    </div>
-                  </div>
-                  <div class="card w-[350px] bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="card-body">
-                      <h2 class="card-title">KANTOR PERWAKILAN METRO</h2>
-                      <p>Kota Metro, TERMINAL 16 C.JL YOS SUDARSO, Provinsi Lampung
-                        <br>
-                        TELP. 0852 2342 2546</p>
-                    </div>
-                  </div>
-                <div class="card w-[350px] bg-white hover:shadow-xl transition-all duration-300">
-                    <div class="card-body">
-                      <h2 class="card-title">KANTOR PERWAKILAN KOTABUMI</h2>
-                      <p>JL. ALAMSYAH RPN, KOTABUMI LAMPUNG UTARA,
-                        <br>
-                        TELP. 0813 7909 5899</p>
-                    </div>
-                  </div>
-                
+
+
+            <!-- fasilitas -->
+
+            <div class="flex gap-6 flex-wrap justify-center">
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/toilet.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Toilet</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/ac.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">AC</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-4">
+                    <img src="./assets/foot-rest.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">30 Kursi</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/recliner.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Leg Rest</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/recliner.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Reclining Seat</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <i class="fi fi-rs-plug-circle-plus text-[32px]"></i>
+                    <h1 class="font-semibold text-base">Stop Kontak</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/tv.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">TV LCD</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/music.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Audio Entertainment</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/snack.svg" class="w-[52px]" alt="">
+
+                    <h1 class="font-semibold text-base">Snack</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/makan.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Voucher Makanan</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/bantal.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Bantal Leher</h1>
+                </div>
+
+                <div class="card bg-white p-6 w-56 text-black flex flex-col items-center justify-items-center gap-2">
+                    <img src="./assets/selimut.svg" class="w-[52px]" alt="">
+                    <h1 class="font-semibold text-base">Selimut</h1>
+                </div>
             </div>
+
+            <div class="my-8">
+                <div class="flex flex-col items-start gap-4 mb-4">
+                    <h1 class="text-xl font-semibold text-gray-800 ">LAYANAN BUS PUSPA JAYA ANTAR KOTA ANTAR PROVINSI
+                    </h1>
+                    <a href="https://puspajaya.co.id/wp-content/uploads/2020/07/HARGA-TIKET-PUSPA-JAYA-LAMPUNG.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        <button class="btn btn-outline btn-primary">Download Harga Tiket</button>
+                    </a>
+                </div>
+                <h2 class="text-base my-2 font-laila">PUSPA JAYA Bus Antar Kota Antar Provinsi (AKAP) melayani antar
+                    penumpang rute Lampung – Pulau Jawa,trayek Bus AKAP Puspa Jaya yang di layani sbb :</h2>
+            </div>
+
+            <!-- trayek 1 -->
+            <div class="space-y-4 my-8">
+                <h1 class="text-xl font-semibold text-gray-800 ">LAMPUNG - YOGYAKARTA <span
+                        class="text-sm text-gray-400">Trayek 1</span></h1>
+                <div class="timelane">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-start timeline-box text-white">BREBES</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">TEGAL</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">PEMALANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">PEKALONGAN</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">BATANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">KENDAL</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">SEMARANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">MAGELANG</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">YOGYA</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- trayek 2 -->
+
+            <div class="space-y-4 my-20">
+                <h1 class="text-xl font-semibold text-gray-800 ">LAMPUNG - YOGYAKARTA - SOLO - PONOROGO <span
+                        class="text-sm text-gray-400">Trayek 2</span></h1>
+                <div class="timeline">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-start timeline-box text-white">PEJAGAN</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">BUMI AYU</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">PEMALANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">WANGON</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">SAMPANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">BUNTU</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">GOMBONG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">KEBUMEN</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">PURWOREJO</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline">
+                    <ul class="timeline">
+                        <li>
+                            <hr />
+
+                            <div class="timeline-start timeline-box text-white">WATES</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">GAMPING</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">YOGYAKARTA</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">PRAMBANAN</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">KLAATEB</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">KARTOSURO</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">SOLO</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">NGAWI</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">MAOSPATI</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="timeline">
+                    <ul class="timeline">
+                        <li>
+                            <hr />
+
+                            <div class="timeline-start timeline-box text-white">MADIUN</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">PONOROGO</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- trayek 3 -->
+
+            <div class="space-y-4 my-8">
+                <h1 class="text-xl font-semibold text-gray-800 ">LAMPUNG – SEMARANG – SOLO – BLITAR <span
+                        class="text-sm text-gray-400">Trayek 3</span></h1>
+                <div class="timeline">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-start timeline-box text-white">BREBES</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">TEGAL</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">PEMALANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">PEKALONGAN</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">BATANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">KENDAL</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">SEMARANG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">BOYOLALI</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">SOLO</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline">
+                    <ul class='timeline'>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">NGANJUK</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">KEDIRI</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box text-white">TULUNG AGUNG</div>
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="timeline-end timeline-box text-white">BLITAR</div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://puspajaya.co.id/wp-content/uploads/2022/07/bus-executive-768x576.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://puspajaya.co.id/wp-content/uploads/2022/07/cabin-2-768x533.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://puspajaya.co.id/wp-content/uploads/2022/07/seats-768x512.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="https://puspajaya.co.id/wp-content/uploads/2022/07/partisi-768x512.jpg" alt="">
+                </div>
+            </div>
+            <!-- PARIWISATA BUS -->
+
+            <div class="pariwisata">
+                <div class="my-8">
+                    <div class="flex flex-col items-start gap-4 mb-4">
+                        <h1 class="text-3xl font-semibold text-gray-800 ">BUS PARIWISATA</h1>
+                        <a href="https://puspajaya.co.id/wp-content/uploads/2020/07/HARGA-TIKET-PUSPA-JAYA-LAMPUNG.pdf"
+                            target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-outline btn-primary">Download Harga Tiket</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BIGBUS -->
+                 
+                <div class="flex flex-col items-start gap-4 mb-4">
+                    <h1 class="text-xl font-semibold text-gray-800 ">BIG BUS EXECUTIVE</h1>
+
+                    <div class="grid grid-cols-4 gap-2">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://puspajaya.co.id/wp-content/uploads/2020/08/puspajayawisata-300x195.jpeg"
+                                alt="">
+                        </div>
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://puspajaya.co.id/wp-content/uploads/2020/07/DSC09728-300x169.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fasilitas -->
+
+                <div class="fasilitas">
+                    <h2 class="mb-2 text-lg font-semibold text-gray-900">Fasilitas :</h2>
+                    <ul class=" space-y-1 text-gray-500 list-inside">
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Kapasitas penumpang max 30 orang </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> AC & toilet
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Reclening seats + leg rest (sandaran kaki) </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Sekat bangku sopir dan penumpang + smoking room
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> LCD TV, Video, Audio, & Karaoke </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Bantal & Selimut
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Terminal Charger</li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Biaya yang ditanggung perusahaan: Solar, Tol, Makan kru bus, Penyebrangan Bus
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-gray-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Biaya Yang ditanggung Penyewa: Masuk Obyek Wisata & Parkir, Penginapan kru bus, sumbangan selama perjalanan (PON, PMI, dll)</li>
+                    </ul>
+                </div>
+
+                <!-- MEDIUM BUS -->
+
+                <div class="flex flex-col items-start gap-4 mb-4 mt-12">
+                    <h1 class="text-xl font-semibold text-gray-800 ">MEDIUM BUS</h1>
+
+                    <div class="grid grid-cols-4 gap-2">
+                        <div>
+                            <img class="h-auto max-w-full rounded-lg"
+                                src="https://puspajaya.co.id/wp-content/uploads/2022/06/IMG_0072-FIX-scaled-e1656115711208-768x395.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fasilitas -->
+
+                <div class="fasilitas">
+                    <h2 class="mb-2 text-lg font-semibold text-gray-900">Fasilitas :</h2>
+                    <ul class=" space-y-1 text-gray-500 list-inside">
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Kapasitas penumpang max 33 orang </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg>AC (non toilet)
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Reclening seat </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> LCD TV, Video, Audio, & Karaoke
+                        </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Terminal Charger </li>
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Biaya yang ditanggung perusahaan: Solar, Tol, Makan kru bus, Penyebrangan Bus
+                        </li>
+                        
+                        <li class="flex items-center"> <svg class="w-3.5 h-3.5 me-2 text-gray-500 flex-shrink-0"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg> Biaya Yang ditanggung Penyewa: Masuk Obyek Wisata & Parkir, Penginapan kru bus, sumbangan selama perjalanan (PON, PMI, dll)</li>
+                    </ul>
+                </div>
+
+                <div class="w-full my-4">
+                    <h2 class="text-base my-2 font-laila">Informasi dan Pemesanan Bus Pariwisata Bisa Hubungi: </h2>
+                    <h2 class="text-sm my-2 font-laila"> Telp: (0721) 783 311 ; 0812 7240 499 (Boim) </h2>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -130,7 +951,7 @@
 
 
     <!-- Footer container -->
-    <footer class=" px-32 text-center bg-primary text-white/75 lg:text-left">
+    <footer class=" px-32 text-center text-white/75 lg:text-left">
         <div class="flex items-center justify-center border-b p-6 border-white/20 lg:justify-between">
             <div class="me-12 hidden lg:block">
                 <span>Get connected with us on social networks:</span>
