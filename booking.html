@@ -14,6 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -46,7 +48,7 @@
                 <a href="/" class="hover:text-gray-200">Home</a>
                 <a href="about.html" class="hover:text-gray-200">Tentang Kami</a>
                 <a href="layanan.html" class="hover:text-gray-200">Layanan</a>
-                <a href="contact.html" class="hover:text-gray-200">Kontak</a> 
+                <a href="contact.html" class="hover:text-gray-200">Kontak</a>
                 <a href="booking.html" class="hover:text-gray-200">Booking</a>
                 <!-- Search Bar -->
                 <div class="relative w-12 overflow-hidden transition-width" id="search">
@@ -73,7 +75,7 @@
     </div>
 
     <!-- kontak -->
-     
+
     <section class="bg-white mb-12">
         <div class="container px-24 py-12 mx-auto">
             <div>
@@ -82,6 +84,10 @@
                 <p class="mt-3 text-gray-500">Yth. Kepada Seluruh Pelanggan Puspa Jaya. Saat Ini Pemesanan Tiket Bus
                     Puspa Jaya dapat menghubungi Kontak Center Tiket Online Kami, Baik Kantor Pusat, Perwakilan maupun
                     agen terdekat yang tersedia wilayah anda</p>
+            </div>
+
+            <div class="container mx-auto my-10">
+                <div id="bookingsTable"></div>
             </div>
 
             <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
@@ -114,7 +120,7 @@
 
                         <h2 class="mt-4 text-base font-medium text-gray-800">Office</h2>
                         <p class="mt-2 text-sm text-gray-500">Untuk Kontak Kantor Pewakilan dan Agen silahkan cek disini
-                            </p>
+                        </p>
                         <p class="mt-2 text-sm text-blue-500">Kantor Wilayah Lampung</p>
                         <p class="mt-2 text-sm text-blue-500">Kantor Wilayah Yogyakarta</p>
                         <p class="mt-2 text-sm text-blue-500">Kantor Wilayah Jawa Tengah dan sekitarnya</p>
@@ -131,7 +137,8 @@
                         </span>
 
                         <h2 class="mt-4 text-base font-medium text-gray-800">Phone</h2>
-                        <p class="mt-2 text-sm text-gray-500">Kami tersedia Senin-minggu dari jam 8 pagi hingga 10 malam.</p>
+                        <p class="mt-2 text-sm text-gray-500">Kami tersedia Senin-minggu dari jam 8 pagi hingga 10
+                            malam.</p>
                         <p class="mt-2 text-sm text-blue-500">0721783111 / +6281297773111</p>
                     </div>
                 </div>
@@ -289,6 +296,59 @@
                 reserved</span>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'http://localhost:8080/api/busesUser',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data, textStatus, xhr) {
+                    console.log('Bookings retrieved successfully');
+                    console.log(data);
+                    displayBookings(data.data);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log('Error fetching bookings');
+                    console.log(errorThrown);
+                }
+            });
+
+            function displayBookings(bookings) {
+                var tableHtml = '<div class="overflow-x-auto">';
+                tableHtml += '<table class="table table-compact table-zebra mt-4">';
+                tableHtml += `<thead>
+            <tr>
+            <th>ID</th>
+            <th>Kode Bus</th>
+            <th>Plat Bus</th>
+            <th>Jumlah Kursi</th>
+            <th>Seat Booked</th>
+            <th>Booking</th>
+            </tr></thead>`;
+                tableHtml += '<tbody>';
+
+                bookings.forEach(function (booking) {
+                    tableHtml += '<tr>';
+                    tableHtml += '<td>' + booking.id + '</td>';
+                    tableHtml += '<td>' + booking.kode_bus + '</td>';
+                    tableHtml += '<td>' + booking.plat_bus + '</td>';
+                    tableHtml += '<td>' + booking.jumlah_kursi + '</td>';
+                    tableHtml += '<td>' + booking.seat_booked + '</td>';
+                    tableHtml += `<td><a target="_blank" href='http://localhost:5173/booking/${booking.id}'>
+                <button class="btn btn-primary mt-4">booking</button>
+                </a> 
+                </td>`
+                    tableHtml += '</tr>';
+                });
+
+                tableHtml += '</tbody></table></div>';
+
+                $('#bookingsTable').html(tableHtml);
+            }
+
+        });
+    </script>
+
 
 </body>
 
