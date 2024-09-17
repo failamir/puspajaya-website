@@ -49,7 +49,7 @@
                 <a href="/" class="hover:text-gray-200">Home</a>
                 <a href="about.html" class="hover:text-gray-200">Tentang Kami</a>
                 <a href="layanan.html" class="hover:text-gray-200">Layanan</a>
-                <a href="contact.html" class="hover:text-gray-200">Kontak</a> 
+                <a href="contact.html" class="hover:text-gray-200">Kontak</a>
                 <a href="booking.html" class="hover:text-gray-200">Booking</a>
                 <!-- Search Bar -->
                 <div class="relative w-12 overflow-hidden transition-width" id="search">
@@ -99,6 +99,267 @@
             </div>
         </div>
     </div>
+
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-4xl mx-auto mt-10">
+        <h2 class="text-xl font-bold mb-4">Cari Tiket Bus</h2>
+        <!-- <form action="#" method="GET" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> -->
+        <form id="ticketForm" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- <div class="col-span-2 md:col-span-1">
+                <label for="origin" class="block text-sm font-medium text-gray-700">Asal</label>
+                <input type="text" id="origin" name="origin"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    placeholder="Pilih Agen Asal">
+            </div> -->
+
+            <!-- <div class="col-span-2 md:col-span-1">
+                <label for="origin" class="block text-sm font-medium text-gray-700">Asal</label>
+                <select id="origin" name="origin"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option value="">Pilih Agen Asal</option>
+                </select>
+            </div>
+
+            <script>
+                // Fetch data from the API
+                fetch('http://localhost:8000/api/rutes')
+                    .then(response => response.json())
+                    .then(result => {
+                        console.log(result); // Debug untuk melihat data API
+
+                        const originSelect = document.getElementById('origin');
+
+                        // Akses ke result.data karena data yang dibutuhkan ada di dalam properti 'data'
+                        const routes = result.data;
+
+                        // Cek apakah data merupakan array
+                        if (Array.isArray(routes)) {
+                            routes.forEach(route => {
+                                const option = document.createElement('option');
+                                option.value = route.id;  // Sesuaikan dengan id dari tiap rute
+                                option.textContent = route.titik_awal;  // Menampilkan titik awal dan akhir
+                                originSelect.appendChild(option);
+                            });
+                        } else {
+                            console.error('Data rute tidak ditemukan atau bukan array');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the data:', error);
+                    });
+            </script>
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="destination" class="block text-sm font-medium text-gray-700">Tujuan</label>
+                <select id="destination" name="destination"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option value="">Pilih Agen Tujuan</option>
+                </select>
+            </div>
+
+            <script>
+                // Fetch data for the origin
+                fetch('http://localhost:8000/api/rutes')
+                    .then(response => response.json())
+                    .then(result => {
+                        console.log(result); // Debug untuk melihat data API
+
+                        const originSelect = document.getElementById('origin');
+                        const destinationSelect = document.getElementById('destination');
+
+                        // Akses ke result.data karena data yang dibutuhkan ada di dalam properti 'data'
+                        const routes = result.data;
+
+                        // Cek apakah data merupakan array
+                        if (Array.isArray(routes)) {
+                            routes.forEach(route => {
+                                // Mengisi opsi untuk 'origin'
+                                const originOption = document.createElement('option');
+                                originOption.value = route.id;
+                                originOption.textContent = route.titik_awal;
+                                originSelect.appendChild(originOption);
+
+                                // Mengisi opsi untuk 'destination'
+                                const destinationOption = document.createElement('option');
+                                destinationOption.value = route.id;
+                                destinationOption.textContent = route.titik_akhir;
+                                destinationSelect.appendChild(destinationOption);
+                            });
+                        } else {
+                            console.error('Data rute tidak ditemukan atau bukan array');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the data:', error);
+                    });
+            </script> -->
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="origin" class="block text-sm font-medium text-gray-700">Asal</label>
+                <select id="origin" name="origin"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option value="">Pilih Agen Asal</option>
+                </select>
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="destination" class="block text-sm font-medium text-gray-700">Tujuan</label>
+                <select id="destination" name="destination" disabled
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option value="">Pilih Agen Tujuan</option>
+                </select>
+            </div>
+
+            <script>
+                // Fetch data for the origin
+                fetch('http://localhost:8000/api/rutes')
+                    .then(response => response.json())
+                    .then(result => {
+                        const originSelect = document.getElementById('origin');
+                        const destinationSelect = document.getElementById('destination');
+
+                        // Mengisi opsi untuk 'origin'
+                        const routes = result.data;
+
+                        if (Array.isArray(routes)) {
+                            routes.forEach(route => {
+                                const originOption = document.createElement('option');
+                                originOption.value = route.titik_awal; // Menggunakan titik_awal sebagai value
+                                originOption.textContent = route.titik_awal;
+                                originSelect.appendChild(originOption);
+                            });
+
+                            // Tambahkan event listener untuk dropdown 'origin'
+                            originSelect.addEventListener('change', function () {
+                                const selectedOrigin = originSelect.value;
+
+                                // Jika origin dipilih, lakukan request ke /rutesDestination
+                                if (selectedOrigin) {
+                                    destinationSelect.disabled = false;
+
+                                    // Kosongkan dropdown destination sebelum mengisi ulang
+                                    destinationSelect.innerHTML = '<option value="">Pilih Agen Tujuan</option>';
+
+                                    // Fetch destination berdasarkan origin yang dipilih
+                                    fetch('http://localhost:8000/api/rutesDestination', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                        },
+                                        body: JSON.stringify({ titik_awal: selectedOrigin })
+                                    })
+                                        .then(response => response.json())
+                                        .then(result => {
+                                            // Cek jika data sukses diambil
+                                            if (result.status === 'success' && Array.isArray(result.data)) {
+                                                // Mengisi opsi untuk 'destination'
+                                                result.data.forEach(route => {
+                                                    const destinationOption = document.createElement('option');
+                                                    destinationOption.value = route.id;
+                                                    destinationOption.textContent = route.titik_akhir;
+                                                    destinationSelect.appendChild(destinationOption);
+                                                });
+                                            } else {
+                                                console.error('Data tujuan tidak ditemukan');
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.error('Error fetching the destination data:', error);
+                                        });
+                                } else {
+                                    // Disable dropdown destination jika origin tidak dipilih
+                                    destinationSelect.disabled = true;
+                                }
+                            });
+                        } else {
+                            console.error('Data rute tidak ditemukan atau bukan array');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the data:', error);
+                    });
+            </script>
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="departure_date" class="block text-sm font-medium text-gray-700">Pergi</label>
+                <input type="date" id="departure_date" name="departure_date"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="seats" class="block text-sm font-medium text-gray-700">Jumlah Kursi</label>
+                <input type="number" id="seats" name="seats"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    placeholder="1 Kursi">
+            </div>
+
+            <div class="col-span-2 md:col-span-1">
+                <label for="class" class="block text-sm font-medium text-gray-700">Kelas</label>
+                <select id="class" name="class"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option value="semua">Semua Kelas Armada</option>
+                    <option value="eksekutif">Eksekutif</option>
+                    <option value="bisnis">Bisnis</option>
+                    <option value="ekonomi">Ekonomi</option>
+                </select>
+            </div>
+
+            <div class="col-span-2 md:col-span-2 lg:col-span-3 flex justify-end">
+                <button type="submit"
+                    class="mt-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    Cari Tiket
+                </button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Handle form submission
+        document.getElementById('ticketForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const origin = document.getElementById('origin').value;
+            const destination = document.getElementById('destination').value;
+            const departureDate = document.getElementById('departure_date').value;
+            const seats = document.getElementById('seats').value;
+            const busClass = document.getElementById('class').value;
+
+            // Prepare data to send to the API
+            const data = {
+                origin: origin,
+                destination: destination,
+                departure_date: departureDate,
+                seats: parseInt(seats),
+                class: busClass
+            };
+
+            // Send data using fetch to API /hitung with POST method
+            fetch('http://localhost:8000/api/hitung', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Success:', result);
+                    // You can handle the result here (e.g., show price, redirect to another page)
+                    if (result.data.error) {
+                        alert(result.data.error);
+                        return;
+                    }
+                    alert('Tiket tersedia dengan harga : Rp.' + result.data.total_harga);
+                    // alert(`Tiket tersedia dengan harga ${result.data.harga}`);
+                    // Window.location.href = "http://localhost:8000/booking.html";
+                    // window.location.href = "http://localhost:8000/booking.html?harga=" + result.data.total_harga;
+                    window.location.href = "http://localhost:8000/daftar?" + new URLSearchParams(data).toString();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Terjadi kesalahan saat menghitung tiket.');
+                });
+        });
+    </script>
 
     <!-- Puspa Jaya -->
     <div class="grid grid-cols-1 md:grid-cols-2 container mx-auto">
