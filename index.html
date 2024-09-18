@@ -217,29 +217,30 @@
                         const originSelect = document.getElementById('origin');
                         const destinationSelect = document.getElementById('destination');
 
-                        // Mengisi opsi untuk 'origin'
+                        // Check if the data is an array
                         const routes = result.data;
 
                         if (Array.isArray(routes)) {
+                            // Populate the 'origin' dropdown
                             routes.forEach(route => {
                                 const originOption = document.createElement('option');
-                                originOption.value = route.titik_awal; // Menggunakan titik_awal sebagai value
+                                originOption.value = route.titik_awal; // Using 'titik_awal' as the value
                                 originOption.textContent = route.titik_awal;
                                 originSelect.appendChild(originOption);
                             });
 
-                            // Tambahkan event listener untuk dropdown 'origin'
+                            // Add event listener for 'origin' dropdown
                             originSelect.addEventListener('change', function () {
                                 const selectedOrigin = originSelect.value;
 
-                                // Jika origin dipilih, lakukan request ke /rutesDestination
+                                // If an origin is selected, fetch available destinations
                                 if (selectedOrigin) {
                                     destinationSelect.disabled = false;
 
-                                    // Kosongkan dropdown destination sebelum mengisi ulang
+                                    // Clear the destination dropdown before repopulating
                                     destinationSelect.innerHTML = '<option value="">Pilih Agen Tujuan</option>';
 
-                                    // Fetch destination berdasarkan origin yang dipilih
+                                    // Fetch destinations based on the selected origin
                                     fetch('http://localhost:8000/api/rutesDestination', {
                                         method: 'POST',
                                         headers: {
@@ -249,12 +250,12 @@
                                     })
                                         .then(response => response.json())
                                         .then(result => {
-                                            // Cek jika data sukses diambil
+                                            // Check if the destination data was successfully retrieved
                                             if (result.status === 'success' && Array.isArray(result.data)) {
-                                                // Mengisi opsi untuk 'destination'
+                                                // Populate the 'destination' dropdown
                                                 result.data.forEach(route => {
                                                     const destinationOption = document.createElement('option');
-                                                    destinationOption.value = route.id;
+                                                    destinationOption.value = route.titik_akhir; // Assuming 'titik_akhir' is the destination
                                                     destinationOption.textContent = route.titik_akhir;
                                                     destinationSelect.appendChild(destinationOption);
                                                 });
@@ -266,7 +267,7 @@
                                             console.error('Error fetching the destination data:', error);
                                         });
                                 } else {
-                                    // Disable dropdown destination jika origin tidak dipilih
+                                    // Disable destination dropdown if no origin is selected
                                     destinationSelect.disabled = true;
                                 }
                             });
